@@ -1,0 +1,44 @@
+SITE — ESCRITÓRIO DE ADVOCACIA NA GUARDA
+
+Este site foi preparado para alojamento gratuito em GitHub Pages, Cloudflare Pages
+ou Netlify e inclui SEO básico, mapa, design responsivo e dados estruturados.
+
+PUBLICAÇÃO MAIS SIMPLES — GITHUB PAGES
+
+1. Crie uma conta em https://github.com (se ainda não tiver).
+2. Crie um novo repositório, por exemplo: escritorio-advocacia-guarda
+3. Faça upload de TODOS os ficheiros desta pasta, mantendo a pasta "assets".
+4. Abra Settings > Pages.
+5. Em "Build and deployment", escolha:
+   Source: Deploy from a branch
+   Branch: main / root
+6. Guarde. O GitHub dará um endereço semelhante a:
+   https://SEU-UTILIZADOR.github.io/escritorio-advocacia-guarda/
+
+GOOGLE SEARCH CONSOLE
+
+1. No Search Console, escolha "Prefixo do URL".
+2. Introduza o endereço completo que o GitHub Pages lhe der.
+3. Escolha "Ficheiro HTML".
+4. Descarregue o ficheiro googleXXXXXXXX.html.
+5. Faça upload desse ficheiro para a RAIZ do repositório, ao lado de index.html.
+6. Aguarde a publicação e volte ao Search Console > Verificar.
+
+SITEMAP E ROBOTS.TXT
+
+Depois de saber o endereço definitivo:
+- Abra sitemap.xml e substitua https://O-SEU-DOMINIO/ pelo endereço real.
+- Abra robots.txt e faça a mesma substituição.
+- No Search Console > Sitemaps, envie: sitemap.xml
+
+IMPORTANTE
+
+As fotografias dos três profissionais e a imagem do escritório foram recortadas
+dos screenshots fornecidos. Para melhor qualidade, substitua os ficheiros em
+/assets por fotografias originais com os MESMOS nomes:
+- barbara-brigas.jpg
+- carlos-monteiro.jpg
+- carolina-monteiro.jpg
+- escritorio-equipa.jpg
+
+O restante site continuará a funcionar sem alterações.

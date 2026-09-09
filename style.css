@@ -1,0 +1,100 @@
+:root{
+  --bg:#1f1f1f;
+  --bg-2:#252525;
+  --text:#f6f2ea;
+  --muted:#cfcfcf;
+  --accent:#f28a00;
+  --line:#454545;
+  --max:1180px;
+  --serif:Georgia, "Times New Roman", serif;
+  --sans:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.65}
+img{max-width:100%;display:block}
+a{color:inherit}
+.container{width:min(calc(100% - 40px),var(--max));margin:auto}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(31,31,31,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.07)}
+.nav-wrap{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand-mark{width:42px;height:42px;border:1px solid var(--accent);display:grid;place-items:center;color:var(--accent);font:700 16px var(--serif)}
+.brand-text{font:700 15px/1.15 var(--serif);letter-spacing:.01em}
+.brand-text small{font:500 12px var(--sans);color:var(--muted)}
+.main-nav{display:flex;gap:28px}
+.main-nav a{text-decoration:none;color:#d7d7d7;font-size:14px}
+.main-nav a:hover{color:var(--accent)}
+.menu-toggle{display:none;background:none;border:1px solid var(--line);color:#fff;font-size:24px;padding:6px 10px;border-radius:6px}
+
+.hero{min-height:76vh;display:flex;align-items:center;background:
+linear-gradient(90deg,rgba(20,20,20,.94),rgba(20,20,20,.64)),
+url("assets/escritorio-equipa.jpg") center/cover no-repeat}
+.hero-inner{padding:110px 0}
+.eyebrow{margin:0 0 14px;color:var(--accent);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px}
+.hero h1,.section h2{font-family:var(--serif);font-weight:700;line-height:1.08}
+.hero h1{font-size:clamp(42px,6vw,78px);max-width:900px;margin:0 0 24px}
+.hero-copy{font-size:20px;max-width:720px;color:#e0e0e0}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:4px;text-decoration:none;font-weight:700}
+.btn-primary{background:var(--accent);color:#171717}
+.btn-primary:hover{filter:brightness(1.06)}
+.btn-ghost{border:1px solid #777;color:white}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+
+.section{padding:110px 0}
+.section-alt{background:var(--bg-2)}
+.section-heading{margin-bottom:48px}
+.section-heading.centered{text-align:center}
+.section h2{font-size:clamp(36px,5vw,58px);margin:0}
+.section h3{font-family:var(--serif);font-size:30px;color:var(--accent);margin-top:0}
+.split{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:start;margin-bottom:70px}
+.prose p{margin-top:0;color:#e7e7e7;font-size:18px}
+.office-image{width:100%;height:420px;object-fit:cover;border-radius:16px}
+.lead-center{max-width:940px;text-align:center;margin:55px auto 0;font-size:20px;color:#e6e6e6}
+
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service-card{padding:28px;border:1px solid var(--line);background:#202020;min-height:210px}
+.service-card h3{font-size:24px;margin-bottom:12px}
+.service-card p{margin:0;color:var(--muted)}
+
+.team-intro{max-width:780px;font-size:19px;color:#dfdfdf;margin-bottom:42px}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.team-card{background:#222;border:1px solid var(--line);overflow:hidden}
+.team-card img{width:100%;aspect-ratio:1/1;object-fit:cover;background:#fff}
+.team-body{padding:26px}
+.team-card h3{font-size:28px;margin-bottom:4px}
+.role{color:#fff;font-weight:700;margin-top:0}
+.team-card p:last-child{color:var(--muted);margin-bottom:0}
+
+.contact-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:30px;align-items:stretch}
+.contact-card{border:1px solid var(--line);padding:34px;background:#202020}
+.contact-card h3{font-size:28px}
+.contact-card p{color:#dedede;margin:22px 0}
+.contact-card a:not(.btn){color:var(--accent);text-decoration:none}
+.map-wrap{min-height:460px;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.map-wrap iframe{width:100%;height:100%;min-height:460px;border:0}
+
+footer{border-top:1px solid var(--line);padding:30px 0}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;color:#aaa;font-size:14px}
+
+@media (max-width:900px){
+  .menu-toggle{display:block}
+  .main-nav{display:none;position:absolute;left:20px;right:20px;top:72px;flex-direction:column;background:#242424;padding:20px;border:1px solid var(--line)}
+  .main-nav.open{display:flex}
+  .split,.contact-grid{grid-template-columns:1fr;gap:35px}
+  .services-grid{grid-template-columns:repeat(2,1fr)}
+  .team-grid{grid-template-columns:1fr}
+  .team-card{display:grid;grid-template-columns:220px 1fr}
+  .team-card img{height:100%;aspect-ratio:auto}
+}
+@media (max-width:620px){
+  .container{width:min(calc(100% - 28px),var(--max))}
+  .section{padding:78px 0}
+  .hero{min-height:72vh}
+  .hero-inner{padding:80px 0}
+  .hero-copy{font-size:18px}
+  .services-grid{grid-template-columns:1fr}
+  .team-card{display:block}
+  .footer-inner{flex-direction:column}
+  .brand-text{font-size:13px}
+}
