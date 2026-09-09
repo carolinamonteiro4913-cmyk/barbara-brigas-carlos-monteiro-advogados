@@ -28,7 +28,7 @@ a{color:inherit}
 
 .hero{min-height:76vh;display:flex;align-items:center;background:
 linear-gradient(90deg,rgba(20,20,20,.94),rgba(20,20,20,.64)),
-url("assets/escritorio-equipa.jpg") center/cover no-repeat}
+url("mesario-equipa.jpg") center/cover no-repeat}
 .hero-inner{padding:110px 0}
 .eyebrow{margin:0 0 14px;color:var(--accent);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px}
 .hero h1,.section h2{font-family:var(--serif);font-weight:700;line-height:1.08}
