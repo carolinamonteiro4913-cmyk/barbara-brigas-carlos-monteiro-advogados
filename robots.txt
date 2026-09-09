@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Depois de publicar, substitua O-SEU-DOMINIO pelo endereço real do site:
-Sitemap: https://O-SEU-DOMINIO/sitemap.xml
+Sitemap: https://carolinamonteiro4913-cmyk.github.io/escritorio-advocacia-guarda/sitemap.xml
