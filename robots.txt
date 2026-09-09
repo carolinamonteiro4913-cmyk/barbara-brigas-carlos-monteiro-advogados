@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://carolinamonteiro4913-cmyk.github.io/escritorio-advocacia-guarda/sitemap.xml
+Sitemap: https://carolinamonteiro4913-cmyk.github.io/barbara-brigas-carlos-monteiro-advogados/sitemap.xml
