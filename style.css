@@ -26,9 +26,16 @@ a{color:inherit}
 .main-nav a:hover{color:var(--accent)}
 .menu-toggle{display:none;background:none;border:1px solid var(--line);color:#fff;font-size:24px;padding:6px 10px;border-radius:6px}
 
-.hero{min-height:76vh;display:flex;align-items:center;background:
-linear-gradient(90deg,rgba(20,20,20,.94),rgba(20,20,20,.64)),
-url("escritorio-equipa.jpg") center/cover no-repeat}
+.hero{
+  min-height:76vh;
+  display:flex;
+  align-items:center;
+  background-color:#1f1f1f;
+  background-image:linear-gradient(90deg,rgba(20,20,20,.86),rgba(20,20,20,.42)),url("https://carolinamonteiro4913-cmyk.github.io/barbara-brigas-carlos-monteiro-advogados/escritorio-equipa.jpg?v=20260910");
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
 .hero-inner{padding:110px 0}
 .eyebrow{margin:0 0 14px;color:var(--accent);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:13px}
 .hero h1,.section h2{font-family:var(--serif);font-weight:700;line-height:1.08}
